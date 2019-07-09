@@ -68,7 +68,7 @@
 
    > 패키지는 반드시 설치를 필요로 한다.
    pip install 패키지 명으로 설치를 한다.
-   ```python
+   ```bash
    $ pip install requests
    
    import requests
@@ -83,7 +83,7 @@
 
     - bs4:문자열을 html등으로 구조화(파씽)
 
-    ```python
+    ```bash
     $ pip install requests
     $ pip install bs4
     ```
@@ -104,7 +104,3 @@
     kospi = soup.select_one('#KOSPI_now').text
     print(kospi)
     ```
-
-    
-
- 3. 

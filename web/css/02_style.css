@@ -1,0 +1,35 @@
+/* 그룹선택자 */
+h1, h2, h3, h4, h5, h6, .silver {
+  color: silver;
+}
+
+/* div 선택자 */
+div {
+  height: 100px;
+  width: 50px;
+  border: 1px solid black;
+}
+
+/* 클래스 선택자 */
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+/* 인접 선택자 */
+.blue + .red + div {
+  background-color: purple;
+}
+
+/* 자식 선택자(바로 밑에 있어야 가능) */
+.parent > li {
+  color : red;
+}
+
+/* 후손 선택자 */
+.ancestor li{
+  color: blue;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="05_style.css">
+</head>
+<body>
+  <h1>display</h1>
+  <!-- 1. block 요소 확인 -->
+  <h2>1. block</h2>
+  <p>display : block은 기본적으로 가질 수 있는 영역의 100%를 가진다.</p>
+  <P>h1~h5, p, div, form, table, ol, ul, li은 기본적으로 block을 가지고 있다.</P>
+  <div>block</div>
+  <form>
+    폼을 작성해주세요.
+  </form>
+  
+  <!-- block 가로 정렬 -->
+  <div class="mr-auto">mr-auto</div>
+  <div class="ml-auto">ml-auto</div>
+  <div class="mx-auto">mx-auto</div>
+  
+  <!-- inline 요소 확인 -->
+  <h2>2. inline</h2>
+  <p>span, a, img는 block을 가지고 있지 않아 붙여 써진다.</p>
+  <span class="red">inline은 content 영역만큼</span>
+  <span>너비를 가진다.</span>
+  <input type="date"></input>
+  <a href="#">링크</a>
+  <img src="#" alt="이미지">
+</body>
+</html>

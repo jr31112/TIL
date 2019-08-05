@@ -1,0 +1,37 @@
+.header {
+  /* 블록의 높이 설정 없을시 높이가 없어 보이지 않음 */
+  height : 300px;
+  
+  /* 이미지 경로(외부에 있는 url도 사용가능) */
+  background-image: url('911.jpg');
+  
+  /* 
+  이미지 크기
+  -> 부족한 부분은 바둑판 형식 배치
+  */
+  /* 사이즈 지정하고 나머지 바둑판형식 */
+  /* 
+  px : 
+    width, height 순으로 지정가능
+    값 하나만 저장하면, width 지정 + heigh : auto
+  cover : 
+    배경이미지 크기의 비율을 고정
+    width height 클 값을 배경 이미지에 맞춤.
+    보이지 않는 영역이 발생 가능
+  contain : 
+    배경이미지 크기의 비율을 고정
+    이미지가 보이지 않는 영역이 없도록 조정
+  */
+  
+  /* background-size: 500px 500px; */
+  background-size: cover;
+  /* background-size: contain; */
+  
+  /* 바둑판 형식으로 넣지 않고 한장만 넣고 싶을때 활용 */
+  /* background-repeat: no-repeat; */
+  
+  /* 배경의 위치를 조정 */
+  /* background-position: center; */
+  background-position-y: 53%;
+  /* background-position-y: bottom; */
+}

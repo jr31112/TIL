@@ -53,13 +53,14 @@
  * `!important`는 CSS적용이 가장 우선된다. 그러므로 **사용에 주의하자!**
    
  * `요소선택자` : 특정 태그명을 가진 엘리먼트 전체를 제어하기 위해서 사용
-      
+   
    ```css
       div {
         height: 100px;
         width: 50px;
      border: 1px solid black;
       }
+   ```
 ```
       
    css선택자에서는 태그의 이름을 사용함.
@@ -70,48 +71,49 @@
      h1, h2, h3, h4, h5, h6, .silver {
     color: silver;
      }
-  ```
-   
+```
+
 * `클래스 선택자` : 일련의 태그를 그룹핑해서 하나처럼제어하기 위해서 사용
-   
+  
      ```css
      .blue {
        background-color: blue;
      }
   ```
-   
+  
      	* class 속성에는 공백으로 구분된 여러개의 class가 표시될 수 있다.
-     	* css선택자에서는 `.`을 사용해서 class임을 표시한다.
-   
+        	
+  * css선택자에서는 `.`을 사용해서 class임을 표시한다.
+        	
    * `아이디 선택자` : 전체 문서에서 하나의 태그를 식별하기 위해서만 사용
-   
+  
      ```css
      #green {
          background-color: green;
      }
      ```
-   
+  
      	* 우선순위가 가장 높다.
      	* css선택자에서는 `#`을 사용하여 id임을 표시한다.
-   
+  
    * `인접 선택자` : 인접 선택자 : 어떤 클래스가 구성된 이후 처리하고자 할 때 사용
-   
+  
      ```css
      .blue + .red + div {
        background-color: purple;
      }
      ```
-   
+  
    * `자식 선택자` : 바로 밑에 있는 것을 처리할  때
-   
+  
      ```css
      .parent > li {
        color : red;
      }
      ```
-   
+  
    * `후손 선택자` : 하위 항목 모든것을 처리할 때
-   
+  
      ```css
      .ancestor li{
        color: blue;
@@ -474,4 +476,89 @@ div {
   }
   ```
 
-  
+
+## 9. Background
+
+요소들의 배경을 이용하여 꾸미고자 할 때 사용한다.
+
+1. 이미지 크기
+
+   사이즈는 px, cover, contain을 활용하여 배경의 크기를 결정한다.
+
+   이미지 크기를 정했을 때 부족한 부분은 바둑판 형식 배치
+
+   * px : width, height 순으로 지정가능
+            값 하나만 저장하면, width 지정 + heigh : auto
+   * cover : 배경이미지 크기의 비율을 고정
+                  width height 중 큰 값을 배경 이미지에 맞춤.
+                  보이지 않는 영역이 발생 가능
+   * contain : 배경이미지 크기의 비율을 고정
+     이미지가 보이지 않는 영역이 없도록 조정
+
+   ```css
+   background-size: 500px 500px;
+   background-size: cover;
+   background-size: contain;
+   ```
+
+   위와 같은 코드를 입력하여 제어한다!
+
+2. 이미지 위치
+
+   넣을 배경의 이미지를 조정한다.
+
+   ```css
+   background-position: center;
+   background-position-y: 53%;
+   background-position-y: bottom;
+   ```
+
+3. 한장만 넣기
+
+   이미지 크기를 정했을 때 부족한 부분은 바둑판 형식으로 배치가 되는데 이를 막기 위해 다음과 같은 코드를 입력한다.
+
+   ```css
+   background-repeat: no-repeat
+   ```
+
+
+
+## 10. Font
+
+1. 폰트 사이즈 조정
+
+   `font-size`를 활용하며 조정하고 자세한 내용은 3. 단위를 참조하도록 하자.
+
+2. 폰트 모양 조정
+
+   `font-family`를 활용하여 조정하고 첫번째 폰트가 사용자의 컴퓨터에 없으면 다음 폰트가 나오게 된다.
+
+   * 고딕체 : `font-family: Arial, Helvetica, sans-serif;`
+   * 명조체 : `font-family: 'Times New Roman', Times, serif;`
+
+3. 구글에서 폰트 받기
+
+   1. [구글 폰트][https://fonts.google.com/]에 접속하여 원하는 언어의 원하는 폰트를 확인한다.
+
+   2. 원하는 폰트를 HTML 문서와 CSS에 넣는다.
+
+      ![1564993133980](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1564993133980.png)
+
+4. 폰트 굵기 조정
+
+   `font-weight`를 활용하여 폰트의 굵기를 조정한다.
+
+   ```css
+   font-weight: lighter;
+   font-weight: bolder;
+   ```
+
+5. 폰트 모양 조정
+
+   `font-style`를 활용하여 폰트의 모양을 조정한다.
+
+   ```css
+   font-style: italic;
+   ```
+
+   

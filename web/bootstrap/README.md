@@ -40,15 +40,15 @@ bootstrap 홈페이지에서 다음과 같은 CSS와 JS로 구성된 코드를 �
 
 `bootstrip`은 기본적으로 `margin`이나 `padding`같은 부분을 설정하여 사용자가 쓰기 쉽게 하였다.
 
-| 속성값      | 넣을 부분      | 크기                  |
-| ----------- | -------------- | --------------------- |
-| m - margin  | t - top        | 0 - *0                |
-| p - padding | b - bottom     | 1 - *0.25             |
-|             | l - left       | 2 - *0.5              |
-|             | r - right      | 3 - *1(web 기본 16px) |
-|             | x - left+right | 4 - *1.5              |
-|             | y - top+bottom | 5 - *3                |
-|             | black - all    | auto                  |
+| 속성값        | 넣을 부분      | 크기                  |
+| ------------- | -------------- | --------------------- |
+| m - margin    | t - top        | 0 - *0                |
+| p - padding   | b - bottom     | 1 - *0.25             |
+| border-border | l - left       | 2 - *0.5              |
+|               | r - right      | 3 - *1(web 기본 16px) |
+|               | x - left+right | 4 - *1.5              |
+|               | y - top+bottom | 5 - *3                |
+|               | black - all    | auto                  |
 
 ```html
 <div class='mt-5'>mt-5</div>
@@ -221,5 +221,86 @@ CSS와 마찬가지로 postion을 줄 수 있다.
 
    내비게이션 바를 표현할 때 사용한다.
 
+## 8. Grid
 
+`grid`를 활용하여 HTML을 구성하기 위해서는 바깥에 `container`를 구성하고 각 행마다 `row`를 구성하여 활용한다.
+
+`grid`는 한 열이 12등분으로 나뉘어 있어 이를 맞춰서 사용하고 넘어갈 시에는 흘러 내리게 된다.
+
+```html
+<div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="bg-primary text-center text-white">3</div>
+      </div>
+      <div class="col-6">
+        <div class="bg-danger text-center text-white">6</div>
+      </div>
+      <div class="col-5">
+        <div class="bg-primary text-center text-white">5overflow</div>
+      </div>
+    </div>
+      <diV class="container">
+    <div class="row">
+      <div class="col-6 offset-6">
+        <div class="bg-primary">오른쪽?</div>
+      </div>
+    </div>
+</div>
+```
+
+* `col` 다음 숫자는 한 열에 할당된 12개 중에 얼마나 사용할지를 나타낸다.
+* `offset` 다음 숫자는 한 열에 할당된 12개 중에 얼마나 빈칸을 줄지를 나타낸다.
+* 반응형으로 표현하기 위해 숫자와 `col`사이에 `sm`, `md`, `lg` 등을 주어 확인하며 5. display와 비슷하게 사용하면 된다!!
+
+## 9. Flex 기초
+
+`flex`는 `Bootstrap`에서 `grid`를 구현할 때 사용하였다.
+
+기본적으로 `display: flex;`를 통해 flex로 표현됨을 선언한다.
+
+1. 방향 설정
+
+   * container 내부의 item들이 쌓이는 방향을 설정할 수 있다.
+
+   * 행으로 쌓이는 방향인 `row`가 기본값이며 `column`을 통해 열로 쌓이게 할 수 있다.
+
+   * reverse를 통해 방향을 반대로 하게 할 수 있다.
+
+     ```html
+     flex-direction: row;
+     flex-direction: column;
+     flex-direction: row-reverse;
+     flex-direction: column-reverse;
+     ```
+
+2. 내부배치
+
+   * container 내부에 item을 감싸 흘러 넘치지 않게 배치 할 수 있다.
+
+   * 기본적으로 `no-wrap`을 통해 감싸지 않는것이 기본값이며, 감싸는 방향에 따라 `wrap`, `wrap-reverse`를 통해 구현한다.
+
+     ```html
+     flex-wrap: no-wrap;
+     flex-wrap: wrap;
+     flex-wrap: wrap-reverse;
+     ```
+
+     
+
+## 10. Flex 정렬
+
+1. 방향
+
+   `flex`의 방향을 기준으로 정렬을 실시한다.
+
+   * x축 : `justify`을 통해 정렬한다.
+   * y축 :  `align`을 통해 정렬한다.
+
+2. 변형하고 싶은것
+
+   * `content` : 주로 `justify`와 같이 사용되며 내용물 전체를 정렬하고자 할 때 사용한다.
+   * `items` : `self`에서 각각 바꾸는 것과는 다르게 내용물 전체를 각각 변화하고자 할 때 사용한다.
+
+   
 

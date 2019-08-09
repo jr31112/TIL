@@ -1,15 +1,19 @@
-# Day10  HTML
+# Day 10  HTML
 ## 0. HTML 기초 및 태그
 
 1. HTML이란?
 
    * HTML은 웹페이지를 만들기 위한 언어로 웹브라우저 위에서 동작하는 언어이다.
 
-   * > HT : HyperText, 문서와 문서가 링크로 연결되어 있다.
-     >
-     > M : Markup, 태그로 이루어져 있다.
-     >
-     > L : Language, 언어
+     ```
+     HT : HyperText, 문서와 문서가 링크로 연결되어 있다.
+     
+     M : Markup, 태그로 이루어져 있다.
+     
+     L : Language, 언어
+     ```
+
+     
 
    * 즉, 웹페이지의 내용과 구조를 담당하는 언어로써 HTML 태그를 통해 정보를 구조화 하는 것이다.
 
@@ -63,7 +67,7 @@
 
    * 다음은 시맨틱 태그들의 레이 아웃으로 이해하기 쉽게 비주얼화 하였다.
 
-     ![1564390700751](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1564390700751.png)
+     ![](C:\Users\student\Desktop\수업\TIL\web\HTML\시맨틱 태그.jpg)
      
 
 ## 2. 태그
@@ -85,7 +89,7 @@
 7. 형광펜 칠하기 - `<mark>` 
 8. 취소선 긋기 - `<del>` 
 9. 밑줄 긋기 - `<ins>`
-10. 아랫첨자 만들기 - <sub>
+10. 아랫첨자 만들기 - `<sub>`
 11. 윗첨자 만들기  - `<sup>`
 12. 코드라인 만들기 - `<pre>`
 13. 인용문 만들기 - `<q>` or `<blockquote>`

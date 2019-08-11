@@ -72,7 +72,7 @@ Spacing과 마찬가지로`bootstrip`은 `text`나 `background`같은 부분을 
 | text - text     | primary - 파란색 |
 | bg - background | secondary - 회색 |
 | alert - 경고문  | success - 녹색   |
-| btn - 버튼      | danger - 빨간색  |
+| btn - button    | danger - 빨간색  |
 |                 | warning - 노란색 |
 |                 | light - 흰색     |
 |                 | dark - 검은색    |

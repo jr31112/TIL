@@ -40,7 +40,7 @@
      </head>
      ```
 
-## 2. [셀렉터(selector)](./02_style.css) -> [html](./02_selector.html)
+## 2. [선택자(selector)](./02_style.css) -> [html](./02_selector.html)
 
 적용하고자하는 요소에 접근 할 수 있다.
 
@@ -181,7 +181,7 @@
      }
      ```
 
-## 4. [`Box` 모델링](04_style.css) -> [html](./04_box_model.html)
+## 4. [Box모델링](04_style.css) -> [html](./04_box_model.html)
 
 ![margin borderì ëí ì´ë¯¸ì§ ê²ìê²°ê³¼](data:image/png;base64,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)
 
@@ -266,7 +266,7 @@
 
    * block내부를 text를 가운데 정렬하고 싶다면 `text-aling: center;`을 활용한다.
 
-   * 세로 또한 가운데 정렬 하고 싶다면 `line-height`를 블록 높이 만큼 주어 세로 가운데 정렬을 한다.
+   * text의 세로 또한 가운데 정렬 하고 싶다면 `line-height`를 블록 높이 만큼 주어 세로 가운데 정렬을 한다.
 
      ```css
      .mr-auto {
@@ -287,7 +287,7 @@
 2. `inline`
    
    * `block`과는 `inline`은 `content` 영역만큼 너비를 가진다.
-   * span, a, img등이 기본적으로 `inline` 요소를 가지고 있다.
+   * `span`, `a`, `img` 등 이 기본적으로 `inline` 요소를 가지고 있다.
 
 ## 6. [Display 02 - 속성 변경 및 none과 hidden](./06_style.css) -> [html](./06_display_2.html)
 
@@ -336,13 +336,42 @@
 1. static
    * 모든 태그들이 처음에 갖고 있는 상태이다.
    * 차례대로 왼쪽에서 오른쪽, 위에서 아래로 쌓인다.
+   * `top` `right` `bottom` `left`요소를 쓸 수 없다!
+   
 2. absolute
    * absolute는 부모 혹은 조상요소를 기준으로 위치한다.(static이 아닌)
    * 만약 부모 혹은 조상중에 relative, absolute, fixed속성을 갖지 않는다면 가장 상위요소가 기준이 된다.
+   
 3. relative
+   
    * relative는 자신이 static요소일 때 있어야 할 위치를 기준으로 이동한다.
+   
 4. fixed
+   
    * fixed는 브라우저 위치에 따라 변경된다.
+   
+   ```css
+   .absolute {
+     position: absolute;
+   }
+   
+   .relative {
+     position: relative;
+   }
+   
+   .relative-move {
+     position: relative;
+     top: 30px;
+     left: 30px;
+   }
+   
+   .fixed {
+     position: fixed;
+     bottom: 0;
+   }
+   ```
+   
+   
 
 **말로 이해하기 힘들다면 예제코드를 통해 확인 할 수 있도록 하자. **
 

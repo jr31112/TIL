@@ -1,8 +1,6 @@
-# Day 11 Bootstrap
+# Bootstrap
 
-## 1. 기본 사용법
-
-![1564993490529](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1564993490529.png)
+## 1. [기본 사용법](./01_intro)
 
 bootstrap 홈페이지에서 다음과 같은 CSS와 JS로 구성된 코드를 확인하고 각각 head 닫는 부분과 body 닫는 부분에 넣는다.
 

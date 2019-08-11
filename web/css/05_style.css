@@ -3,6 +3,7 @@ div {
   height: 100px;
   background-color: #aaff22;
   text-align: center;
+  line-height: 100px;
 }
 
 .mr-auto {
@@ -14,7 +15,7 @@ div {
 }
 
 .mx-auto {
-  margin: 0 auto;
+  margin: auto;
 }
 
 .red {

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 id="time" style="text-align:center; color:azure;margin-top:300px;"></h1>
+  <h2 style="text-align:center; color:azure;">Hello, Insung</h2>
+  <h3 style="text-align:center; color:azure;">Todo List</h3>
+  <form action="" style='text-align:center'>
+    <label for="input" style="color:azure;">할일을 입력하세요</label>
+    <input type="text" id="input">
+    <button id="input-button">+</button>
+  </form>
+  <ul id="todo-list"></ul>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    const form = document.querySelector('form')
+    const button = document.querySelector('#input-button')
+    const todo_list = document.querySelector('#todo-list')
+    axios.get('https://source.unsplash.com/random')
+      .then(response => {
+      document.body.style.backgroundImage=`url(${response.request.responseURL})`
+      document.body.style.backgroundSize='cover'
+      document.body.style.backgroundRepeat='no-repeat'
+    })  
+    form.addEventListener('submit', function (event) {
+      event.preventDefault()
+      console.log(event.target.previousElementSibling)
+      // todo - list안에 추가한다.
+      // let new_li = document.createElement('li')
+      // new_li.innerText = document.querySelector('#input').value
+      // todo_list.appendChild(new_li)
+      const input = document.querySelector('#input')
+      if (input.value) {
+        const li = document.createElement('li')
+        const btn = document.createElement('button')
+        li.innerText = input.value
+        btn.innerText = '삭제'
+        li.appendChild(btn)
+        btn.addEventListener('click', function (event) {
+          li.remove()
+        })
+        input.value = ''
+        todo_list.appendChild(li)
+      } else {
+        alert('내용을 입력하세요!')
+      }
+    })
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    }
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      // add a zero in front of numbers<10
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('time').innerHTML = h + ':' + m + ':' + s
+      t = setTimeout(function() {
+        startTime()
+      }, 500);
+    }
+    startTime();
+  </script>
+</body>
+
+</html>

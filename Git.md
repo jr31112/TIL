@@ -22,6 +22,23 @@
   Github email이랑 다르면, Github에서 다름 사람이 커밋한 것으로 인식됨!
 
   *컴퓨터에서 한번만 설정해주면 된다.*
+  
+* 깃 유저 삭제
+
+  ```bash
+  $ git config --unset --global user.name
+  $ git config --unset --global user.email
+  ```
+
+  
+
+* 깃 유저 확인
+
+  ```bash
+  $ git config -l --global
+  ```
+
+  
 
 1. Git 저장소 설정
 

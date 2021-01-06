@@ -2,7 +2,7 @@
 
 > 수업 내용 정리
 
-## [Python](./Python)
+## [Python](./python)
 
 파이썬 기본 사용법
 
